@@ -1,0 +1,3 @@
+/home/pham/qt_projects/taonghiep/CMakeFiles/edit_cache.dir
+/home/pham/qt_projects/taonghiep/CMakeFiles/taonghiep.dir
+/home/pham/qt_projects/taonghiep/CMakeFiles/rebuild_cache.dir

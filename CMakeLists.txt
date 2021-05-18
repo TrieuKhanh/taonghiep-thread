@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 2.8)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS ON)
+
+project(taonghiep)
+find_package( Threads )
+#set(CMAKE_INCLUDE_CURRENT_DIR ON)
+#INCLUDE_DIRECTORIES(CMAKE_CURRENT_SOURCE_DIR)
+#file(GLOB_RECURSE SRCS "*.cpp")
+#file(GLOB_RECURSE HDRS "*.hpp")
+#target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+SET(SOURCES main.cpp pool.h pool.cpp)
+add_executable(${PROJECT_NAME} ${SOURCES})
+target_link_libraries(${PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT})

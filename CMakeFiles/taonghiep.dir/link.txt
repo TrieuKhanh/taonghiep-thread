@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/taonghiep.dir/main.cpp.o CMakeFiles/taonghiep.dir/pool.cpp.o  -o taonghiep -rdynamic -lpthread 
