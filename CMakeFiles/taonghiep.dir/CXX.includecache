@@ -9,6 +9,8 @@
 /home/pham/qt_projects/taonghiep/main.cpp
 pool.h
 /home/pham/qt_projects/taonghiep/pool.h
+atomic
+-
 iostream
 -
 thread
@@ -19,6 +21,10 @@ vector
 /home/pham/qt_projects/taonghiep/pool.cpp
 pool.h
 /home/pham/qt_projects/taonghiep/pool.h
+iostream
+-
+memory
+-
 
 /home/pham/qt_projects/taonghiep/pool.h
 condition_variable

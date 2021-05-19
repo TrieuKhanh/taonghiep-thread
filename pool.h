@@ -5,20 +5,21 @@
 #include <mutex>
 #include <queue>
 
-using job = std::function<void(void)>;
+using job = std::function<void(unsigned &)>;
 
 class Pool {
 public:
-  Pool();
-  void work();
+  Pool(std::shared_ptr<std::mutex> m,
+       std::shared_ptr<std::condition_variable> &con);
+  void work(unsigned &co);
   void add_job(job j);
   void shutdown();
 
 private:
-  std::condition_variable condition;
-  std::mutex Queue_Mutex;
+  std::shared_ptr<std::condition_variable> condition;
+  std::shared_ptr<std::mutex> Queue_Mutex;
   std::queue<job> Queue;
-  bool terminate_pool;
+  bool terminate_pool{false};
 };
 
 #endif // POOL_H
